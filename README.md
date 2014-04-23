@@ -9,7 +9,8 @@ code for this assignment should be portable -- make sure you test with g++ on pr
 
 Description:
 Create a class called Mixed. Objects of type Mixed will store and manage rational numbers in a mixed number format (integer 
-part and a fraction part). The class, along with the required operator overloads, should be written in the files "mixed.h" 
+part and a fraction part). The class, along with the required operator overloads, should be written in the files 
+"mixed.h" 
 and "mixed.cpp".
 
 Programming Specifications:
@@ -25,9 +26,9 @@ Programming Specifications:
    invalid (negatives not fitting the rule, or 0 denominator), then simply set the object to represent the value 0. 
    Examples of declarations of objects:
    
-3. Mixed m1(3, 4, 5); // sets object to 3 4/5
-4. Mixed m2(-4, 1, 2); // sets object to -4 1/2
-5. Mixed m3(0, -3, 5); // sets object to -3/5 (integer part is 0).
+3. Mixed m1(3, 4, 5);   // sets object to 3 4/5
+4. Mixed m2(-4, 1, 2);  // sets object to -4 1/2
+5. Mixed m3(0, -3, 5);  // sets object to -3/5 (integer part is 0).
 6. Mixed m4(-1, -2, 4); // bad parameter combination. Set object to 0.
 
 The other constructor should expect a single int parameter with a default value of 0 (so that it also acts as a default 
@@ -35,10 +36,9 @@ constructor). This constructor allows an integer to be passed in and represented
 is no fractional part. Example declarations:
 
 Mixed m5(4); // sets object to 4 (i.e. 4 and no fractional part).
-Mixed m6; // sets object to 0 (default)
+Mixed m6;    // sets object to 0 (default)
 
-Note that this last constructor will act as a "conversion constructor", allowing automatictype conversions from type int 
-to type Mixed.
+Note that this last constructor will act as a "conversion constructor", allowing automatictype conversions from type int to type Mixed.
 
 7. The Mixed class should have public member functions Evaluate(), ToFraction(), and Simplify(). The Evaluate() function 
    should return a double, the others don't return anything. These functions have no parameters. The names must match 
@@ -107,7 +107,7 @@ o Mixed r = m / z;        // r is 0 (even though this is not good math)
 17. cout << m1++;      // prints 1 2/3, m1 is now 2 2/3
 18. cout << ++m1;      // prints 3 2/3, m1 is now 3 2/3
 19. cout << m2--;      // prints 2 1/2, m2 is now 1 1/2
-20. cout << --m2;      // prints 1/2 , m2 is now 0 1/2
+20. cout << --m2;      // prints 1/2 , m2 is now  0 1/2
 
 21. General Requirements
 o As usual, no global variables
